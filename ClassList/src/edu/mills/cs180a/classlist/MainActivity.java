@@ -7,8 +7,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -25,10 +27,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayAdapter<Person> adapter = new ArrayAdapter<Person>(this,
-                android.R.layout.simple_list_item_1, Person.everyone);
         ListView listView = (ListView) findViewById(R.id.listView1);
-        listView.setAdapter(adapter);
+        listView.setAdapter(new PersonAdapter());
         listView.setOnItemClickListener(this);
     }
 
@@ -52,6 +52,20 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         } catch (ActivityNotFoundException e) {
             Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT)
                     .show();
+        }
+    }
+
+    private class PersonAdapter extends ArrayAdapter<Person> {
+        private PersonAdapter() {
+            super(MainActivity.this, R.layout.row, R.id.name, Person.everyone);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View row = super.getView(position, convertView, parent);
+            ImageView icon = (ImageView) row.findViewById(R.id.icon);
+            icon.setImageResource(getItem(position).getImageId());
+            return row;
         }
     }
 }

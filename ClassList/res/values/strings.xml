@@ -4,5 +4,6 @@
     <string name="app_name">List Example</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="person_icon">Image of person</string>
 
 </resources>
