@@ -12,13 +12,13 @@ public class Person {
         new Person("Ching", "Yu", "cyu@mills.edu", R.drawable.ching),
         new Person("Christie", "Yeh", "cyeh@mills.edu", R.drawable.christie),
         new Person("Colin", "Lockard", "clockard@mills.edu", R.drawable.colin),
-        new Person("Ellen", "Spertus", "ellen.spertus@gmail.com", R.drawable.anonymous),
+        new Person("Ellen", "Spertus", "ellen.spertus@gmail.com", R.drawable.ellen),
         new Person("Fiona", "Robinson", "frobinson@mills.edu", R.drawable.fiona),
         new Person("Michele", "Collender", "mcollender@mills.edu", R.drawable.michele),
         new Person("Renee", "Johnston", "renee.johnston1149@gmail.com", R.drawable.renee),
         new Person("Robert", "Andrews", "roandrews@mills.edu", R.drawable.robert),
         new Person("Taurin", "Barrera", "taurin.barrera@mills.edu", R.drawable.taurin),
-        new Person("Trevor", "Adams", "trevorbadams@gmail.com", R.drawable.anonymous)
+        new Person("Trevor", "Adams", "trevorbadams@gmail.com", R.drawable.trevor)
     };
     private String mFirstName;
     private String mLastName;
