@@ -19,6 +19,7 @@ import android.widget.Toast;
  * If a name is clicked on, a confirmatory {@link Toast} will be displayed.
  *
  * @author ellen.spertus@gmail.com (Ellen Spertus)
+ * @author ajkwak@users.noreply.github.com (AJ Parmidge)
  *
  * @see Person
  */
@@ -38,6 +39,7 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     }
 
     private void sendEmailTo(Person person) {
+        // Set up the e-mail to send.
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO,
                 Uri.fromParts("mailto", person.getEmail(), null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello from " + getString(R.string.app_name));
@@ -47,6 +49,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
                 .append(firstName)
                 .append('!')
                 .toString());
+
+        // Send the e-mail.
         try {
             startActivity(Intent.createChooser(emailIntent, "Send Email"));
         } catch (ActivityNotFoundException e) {
