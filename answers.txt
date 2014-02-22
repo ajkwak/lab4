@@ -1,0 +1,25 @@
+AJ Parmidge
+CS280A: Mobile Application Development
+Ellen Spertus
+Lab 4 Writeup
+22 February 2014
+
+NOTE: To view the classlist screenshot and these reflections in non-plaintext
+format, see this link:
+https://docs.google.com/a/mills.edu/document/d/1AX9259BWmsApbL99bdawd4COQ5LRh-a_KZ_c9gNvpD4/edit
+
+NOTE #2: I worked alone on this lab
+
+*******************
+REFLECTIONS
+*******************
+
+This lab was quite fun!  I had been curious as to how lists were displayed on
+android.  I knew it was possible, because the NPR News app always shows lists
+of stories, but I had no idea of the implementation.  It was very interesting
+to learn -- although I had to read the code a couple of times before I
+understood what was happening!  I’m looking forward to using this on my own
+app(s?).  Getting a feeling of what it’s like working with other people in Git
+was also interesting.  Most of my work has been on a repo to which only I
+contribute.  However, the merging (even when there were merge conflicts) was
+surprisingly easy.
